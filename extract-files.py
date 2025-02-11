@@ -26,6 +26,8 @@ namespace_imports = [
 blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/android.hardware.security.keymint-service.samsung.rc': blob_fixup()
         .regex_replace('keymint-service', 'keymint-service.samsung'),
+    'vendor/etc/init/init.nfc.samsung.rc': blob_fixup()
+        .regex_replace('system', 'secure_element'),
     'vendor/etc/init/init.s5e9945.rc': blob_fixup()
         .regex_replace('vendor_spay', 'system'),
     (
