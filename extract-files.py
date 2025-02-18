@@ -24,6 +24,13 @@ namespace_imports = [
 
 
 blob_fixups: blob_fixups_user_type = {
+    'vendor/bin/hw/android.hardware.graphics.composer3-service.exynos': blob_fixup()
+        .replace_needed(
+            'android.hardware.graphics.composer@2.1-resources.so',
+            'android.hardware.graphics.composer@2.1-resources_samsung.so')
+        .replace_needed(
+            'android.hardware.graphics.composer@2.2-resources.so',
+            'android.hardware.graphics.composer@2.2-resources_samsung.so'),
     'vendor/etc/init/android.hardware.security.keymint-service.samsung.rc': blob_fixup()
         .regex_replace('keymint-service', 'keymint-service.samsung'),
     'vendor/etc/init/init.nfc.samsung.rc': blob_fixup()
@@ -33,6 +40,10 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc': blob_fixup()
         .regex_replace('vendor_secdir w', 'w')
         .regex_replace('vendor_secdir', 'camera'),
+    'vendor/lib64/android.hardware.graphics.composer@2.2-resources_samsung.so': blob_fixup()
+        .replace_needed(
+            'android.hardware.graphics.composer@2.1-resources.so',
+            'android.hardware.graphics.composer@2.1-resources_samsung.so'),
     (
         'vendor/lib64/hw/audio.primary.s5e9945.so',
         'vendor/lib64/libaudioproxy2.so',
