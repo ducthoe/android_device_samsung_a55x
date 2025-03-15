@@ -237,3 +237,10 @@ PRODUCT_PACKAGES += \
     libcld80211 \
     wpa_supplicant \
     wpa_supplicant.conf
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint-service.samsung
+
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.fingerprint.xml
