@@ -450,6 +450,8 @@ vendor/etc/wifi/p2p_supplicant_overlay.conf
 vendor/etc/wifi/wpa_supplicant_overlay.conf
 
 # Fingerprint
+vendor/etc/init/init.fingerprint.rc
+vendor/etc/init/vendor.samsung.hardware.sysinput-default.rc
 vendor/lib64/libsfp_sensor.so
 vendor/lib64/libsfp_teegw.so
 vendor/lib64/vendor.samsung.hardware.biometrics.fingerprint-V1-ndk.so
