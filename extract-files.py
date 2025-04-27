@@ -80,6 +80,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc': blob_fixup()
         .regex_replace('vendor_secdir w', 'w')
         .regex_replace('vendor_secdir', 'camera'),
+    'vendor/etc/init/android.hardware.security.keymint-service.samsung.rc' : blob_fixup()
+        .regex_replace('/vendor/bin/hw/android.hardware.security.keymint-service', '/vendor/bin/hw/android.hardware.security.keymint-service-samsung'),
 }  # fmt: skip
 
 
