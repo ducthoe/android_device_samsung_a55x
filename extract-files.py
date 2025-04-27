@@ -77,6 +77,9 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libshim_crypto.so'),
     'vendor/lib64/libtinyalsa_samsung.so': blob_fixup()
         .fix_soname(),
+    'vendor/etc/init/vendor.samsung.hardware.camera.provider-service_64.rc': blob_fixup()
+        .regex_replace('vendor_secdir w', 'w')
+        .regex_replace('vendor_secdir', 'camera'),
 }  # fmt: skip
 
 
