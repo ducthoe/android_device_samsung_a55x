@@ -134,10 +134,9 @@ PRODUCT_PACKAGES += \
     fstab.s5e9945_vendor_ramdisk
 
 # Kernel Modules
-PRODUCT_COPY_FILES += /dev/null:$(TARGET_COPY_OUT_RECOVERY)/root/dev/null
-
 PRODUCT_PACKAGES += \
     linker.vendor_ramdisk \
+    null \
     toolbox.vendor_ramdisk
 
 # Keystore
