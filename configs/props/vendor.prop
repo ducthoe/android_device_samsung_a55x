@@ -1,3 +1,8 @@
+# AVF
+hypervisor.pvmfw.path=none
+ro.boot.hypervisor.protected_vm.supported=true
+ro.boot.hypervisor.vm.supported=true
+
 # Codec2
 debug.stagefright.c2inputsurface=-1
 vendor.debug.c2.sbwc.enable=true
