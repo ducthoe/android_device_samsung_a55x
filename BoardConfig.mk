@@ -67,6 +67,7 @@ TARGET_KERNEL_CONFIG := \
     kernel/samsung/e2s/arch/arm64/configs/s5e9945-user_defconfig \
     1>/dev/null; echo erd9945_u_gki_defconfig)
 TARGET_KERNEL_NO_GCC := true
+TARGET_KERNEL_CLANG_VERSION := r522817
 
 # Modules
 BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := $(shell cat device/samsung/e2s/configs/kernel/modules/ramdisk)
