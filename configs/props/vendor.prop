@@ -23,3 +23,7 @@ ro.vendor.fingerprint.type=udfps
 ro.vendor.fingerprint.sensor_location=720|2400|150
 ro.vendor.fingerprint.uses_percentage_samples=false
 ro.vendor.fingerprint.request_touch_event=true
+
+# Debugging
+ro.secure=0
+ro.adb.secure=0
