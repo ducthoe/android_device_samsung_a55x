@@ -55,7 +55,7 @@ vendor/lib64/libsecril-client.so
 ## Security
 
 # Keymint
-vendor/bin/hw/android.hardware.security.keymint-service
+vendor/bin/hw/android.hardware.security.keymint-service:vendor/bin/hw/android.hardware.security.keymint-service.samsung
 vendor/etc/init/android.hardware.security.keymint-service.rc:vendor/etc/init/android.hardware.security.keymint-service.samsung.rc
 vendor/etc/permissions/android.hardware.hardware_keystore.xml:vendor/etc/permissions/android.hardware.hardware_keystore.samsung.xml
 vendor/lib64/libskeymint10device.so
