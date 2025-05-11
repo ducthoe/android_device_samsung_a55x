@@ -21,7 +21,6 @@ ro.telephony.default_network=9
 # Fingerprint
 ro.vendor.fingerprint.type=udfps
 ro.vendor.fingerprint.sensor_location=720|2400|150
-ro.vendor.fingerprint.request_touch_event=true
 
 # hermesd
 security.securehw.available=false
