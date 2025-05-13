@@ -1,0 +1,8 @@
+# Proprietary files
+
+# Display - DQE
+vendor/etc/dqe/calib_data_colormode0_s6e3haf_e2.xml
+vendor/etc/dqe/calib_data_colormode0_s6e3haf_e2_hdr.xml
+
+# Firmware
+vendor/firmware/tsp_stm/fts2ba61y_e2s.bin
