@@ -13,8 +13,13 @@
 # limitations under the License.
 #
 
+DEVICE_PATH := device/samsung/e2s
+
 # Inherit from common
 $(call inherit-product, device/samsung/s5e9945/common.mk)
 
 # Inherit from vendor
 $(call inherit-product, vendor/samsung/e2s/e2s-vendor.mk)
+
+# Properties
+TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
