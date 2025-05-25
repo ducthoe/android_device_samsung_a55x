@@ -21,5 +21,8 @@ $(call inherit-product, device/samsung/s5e9945/common.mk)
 # Inherit from vendor
 $(call inherit-product, vendor/samsung/e2s/e2s-vendor.mk)
 
+# Overlays
+DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
+
 # Properties
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/vendor.prop
