@@ -21,6 +21,10 @@ $(call inherit-product, device/samsung/s5e9945/common.mk)
 # Inherit from vendor
 $(call inherit-product, vendor/samsung/e2s/e2s-vendor.mk)
 
+# Boot animation
+TARGET_SCREEN_WIDTH := 1440
+TARGET_SCREEN_HEIGHT := 3120
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(DEVICE_PATH)/overlay
 
