@@ -50,6 +50,8 @@ vendor/firmware/os.checked.bin
 vendor/firmware/pablo_icpufw.bin
 vendor/firmware/rear3_dualcal_param.bin
 vendor/firmware/tsp_stm/fts2ba61y_e2s.bin
+vendor/firmware/uwb/qm35_fw_pkg.bin
+vendor/firmware/uwb/qm35_fw_pkg_prod.bin
 vendor/firmware/vts.bin
 
 # Security - TEEGRIS Firmware
@@ -83,3 +85,14 @@ vendor/tee/driver/00000000-0000-0000-0000-4d53546d7374
 vendor/tee/driver/00000000-0000-0000-0000-53626f786476
 vendor/tee/driver/00000000-0000-0000-0000-564c544b4456
 vendor/tee/ffffffff-0000-0000-0000-000000000030
+
+# UWB
+vendor/bin/hw/vendor.samsung.hardware.uwb@1.0-service
+vendor/etc/init/init.vendor.uwb.rc
+vendor/etc/init/vendor.samsung.hardware.uwb@1.0-service.rc
+vendor/etc/uwb/antenna_configuration.conf
+vendor/etc/uwb/configuration.conf
+vendor/etc/uwb/default_calibration.conf
+vendor/etc/uwb/manifest-countrycode.conf
+vendor/etc/uwb_key
+vendor/etc/vintf/manifest/vendor.samsung.hardware.uwb@1.0-service.xml

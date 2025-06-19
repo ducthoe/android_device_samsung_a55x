@@ -24,5 +24,8 @@ BOARD_DTBO_CFG := $(DEVICE_PATH)/configs/kernel/e2s.cfg
 # Modules
 BOARD_RECOVERY_RAMDISK_KERNEL_MODULES_LOAD := mcd-panel-s6e3haf_e2s.ko s2dos07.ko qm35.ko synaptics_ts_spi.ko
 
+# SEPolicy
+BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
+
 # Inherit from common
 include device/samsung/s5e9945/BoardConfigCommon.mk

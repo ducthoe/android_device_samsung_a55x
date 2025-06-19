@@ -1,0 +1,3 @@
+# Devices
+type qm_coredump_device, dev_type;
+type uwb_device, dev_type;
