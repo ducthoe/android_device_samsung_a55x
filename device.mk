@@ -22,7 +22,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit_only.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit proprietary files
-$(call inherit-product, vendor/samsung/e2s/e2s-vendor.mk)
+$(call inherit-product, vendor/samsung/a55x/a55x-vendor.mk)
 
 # Inherit some common Lineage stuff
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
@@ -53,7 +53,7 @@ PRODUCT_SOONG_NAMESPACES += \
     hardware/samsung
 
 # Updater
-AB_OTA_UPDATER := false
+AB_OTA_UPDATER := true
 
 
 # Audio
@@ -109,7 +109,7 @@ PRODUCT_PACKAGES += fastbootd
 
 # GPU Firmware
 PRODUCT_COPY_FILES += \
-    vendor/samsung/e2s/proprietary/recovery/root/lib/firmware/sgpu/vangogh_lite_unified_evt1.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/sgpu/vangogh_lite_unified_evt1.bin
+    vendor/samsung/a55x/proprietary/recovery/root/lib/firmware/sgpu/vangogh_lite_unified_evt1.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/sgpu/vangogh_lite_unified_evt1.bin
 
 # Graphics
 $(call inherit-product, $(SRC_TARGET_DIR)/product/angle_default.mk)
@@ -134,8 +134,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/init/init.debug.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.debug.rc
 
 PRODUCT_PACKAGES += \
-    fstab.s5e9945_vendor \
-    fstab.s5e9945_vendor_ramdisk
+    fstab.s5e8845_vendor \
+    fstab.s5e8845_vendor_ramdisk
 
 # Kernel Modules
 PRODUCT_COPY_FILES += /dev/null:$(TARGET_COPY_OUT_RECOVERY)/root/dev/null
@@ -209,7 +209,7 @@ PRODUCT_COPY_FILES += \
 
 # USB
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/init/init.s5e9945.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.s5e9945.usb.rc \
+    $(LOCAL_PATH)/configs/init/init.s5e8845.usb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/init.s5e8845.usb.rc \
     frameworks/native/data/etc/android.hardware.usb.accessory.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.accessory.xml \
     frameworks/native/data/etc/android.hardware.usb.host.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.usb.host.xml
 
